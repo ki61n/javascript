@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+<head>
+<script language="javascript">
+ function preload() 
+{ 
+topon=new Image(100,50); topon.src="sunrise.jpg"; topoff=new Image(260,280); topoff.src="sunset.jpeg"; 
+} 
+function myMouseOn(n) 
+{ 
+preload(); 
+imageON=eval(n+"on.src"); 
+document.images[n].src=imageON; 
+} 
+function myMouseOff(n) 
+{ 
+imageOFF=eval(n+"off.src"); 
+document.images[n].src=imageOFF; 
+} 
+</script>
+</head>
+<body >
+<h1> Demo for mouse over</h1>
+<a href="#" onMouseOut="myMouseOff('top')";
+ onMouseOver="myMouseOn('top')";>
+<img src="kala.jpeg" alt="Show Next" name="top">
+</a>
+</body>
+</html>
+
